@@ -31,10 +31,10 @@ function getNewDog() {
 heartIcon.addEventListener("click", function(){
     if (btnsOn) {
         currentDog.setMatchStatus(true)
-        document.getElementsByClassName('like')[0].classList.add('show')
+        document.getElementById('like').style.opacity = 1
         btnsOn = false
         setTimeout(function () {
-            document.getElementsByClassName('like')[0].classList.remove('show')
+            document.getElementById('like').style.opacity = 0
             btnsOn = true
             getNewDog()
         }, 1000)
@@ -45,10 +45,10 @@ heartIcon.addEventListener("click", function(){
 crossContainer.addEventListener("click", function(){
     if (btnsOn) {
         currentDog.setMatchStatus(false)
-        document.getElementsByClassName('nope')[0].classList.add('show')
+        document.getElementById('nope').style.opacity = 1
         btnsOn = false
         setTimeout(function () {
-            document.getElementsByClassName('nope')[0].classList.remove('show')
+            document.getElementById('nope').style.opacity = 0
             getNewDog()
             btnsOn = true
         }, 1000)

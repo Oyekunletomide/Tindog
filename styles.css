@@ -84,9 +84,20 @@ body{
 #cross-icon:hover{
     background: #FFE7EF;
 }
-.like,
-.nope{
-    z-index: 5;
+#like{
+    
+    width: 150px;
+    height: 80px;
+    position: absolute;
+    top: 130px;
+    left: 16px;
+    transform: rotate(-40deg);
+    opacity: 0;
+}
+
+
+#nope{
+    
     width: 150px;
     height: 80px;
     position: absolute;
@@ -130,7 +141,6 @@ body{
 
  
 }
-
 
 
 
@@ -213,8 +223,19 @@ body{
 #cross-icon:hover{
     background: #FFE7EF;
 }
-.like,
-.nope{
+#like{
+    
+    width: 150px;
+    height: 80px;
+    position: absolute;
+    top: 130px;
+    left: 16px;
+    transform: rotate(-40deg);
+    opacity: 0;
+}
+
+
+#nope{
     
     width: 150px;
     height: 80px;
@@ -255,5 +276,3 @@ body{
     align-items: center;
     gap: 1.5em;
 }
-
-
